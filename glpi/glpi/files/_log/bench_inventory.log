@@ -1,0 +1,21 @@
+2024-08-16 02:05:17 [@14aefbc228db]
+Computer:
+	prepare:
+		Execution time:      0.01759 segundos
+		Memory usage:        3.42 MByte
+		Memory usage (real): 6 MByte
+		Memory peak:         3.94 MByte
+
+	handle:
+		Execution time:      3.46083 segundos
+		Memory usage:        10.03 MByte
+		Memory usage (real): 14 MByte
+		Memory peak:         11.77 MByte
+
+	full:
+		Execution time:      7.8151 segundos
+		Memory usage:        8.4 MByte
+		Memory usage (real): 14 MByte
+		Memory peak:         11.77 MByte
+
+Inventoried assets: Computer #1

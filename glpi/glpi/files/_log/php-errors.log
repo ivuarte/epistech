@@ -1,0 +1,470 @@
+[2024-07-09 21:33:11] glpiphplog.WARNING: Test logger  
+[2024-07-23 01:18:05] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): Connection refused in /var/www/html/glpi/src/DBmysql.php at line 250
+  Backtrace :
+  src/DBmysql.php:250                                mysqli->real_connect()
+  src/DBmysql.php:209                                DBmysql->connect()
+  src/DBConnection.php:416                           DBmysql->__construct()
+  src/DBConnection.php:510                           DBConnection::switchToMaster()
+  inc/config.php:127                                 DBConnection::establishDBConnection()
+  inc/includes.php:58                                include_once()
+  front/cron.php:44                                  include()
+  
+[2024-08-15 04:45:51] glpiphplog.WARNING: Test logger  
+[2024-08-16 02:07:18] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:18] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:18] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:18] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:36] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:36] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:36] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:36] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:40] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:523 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:40] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:523 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:40] glpiphplog.CRITICAL:   *** Uncaught Exception Error: mysqli object is not fully initialized in /var/www/html/glpi/src/DBmysql.php at line 396
+  Backtrace :
+  src/DBmysql.php:396                                mysqli->query()
+  src/DBmysql.php:352                                DBmysql->doQuery()
+  ...e/ocsinventoryng/inc/ocsdbclient.class.php:1351 DBmysql->query()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:524 PluginOcsinventoryngOcsDbClient->getTotalDeletedComputers()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:41] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:650                             CommonGLPI->defineAllTabs()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:41] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:650                             CommonGLPI->defineAllTabs()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:41] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:650                             CommonGLPI->defineAllTabs()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:41] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:650                             CommonGLPI->defineAllTabs()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:41] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:523 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:41] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:523 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:41] glpiphplog.CRITICAL:   *** Uncaught Exception Error: mysqli object is not fully initialized in /var/www/html/glpi/src/DBmysql.php at line 396
+  Backtrace :
+  src/DBmysql.php:396                                mysqli->query()
+  src/DBmysql.php:352                                DBmysql->doQuery()
+  ...e/ocsinventoryng/inc/ocsdbclient.class.php:1351 DBmysql->query()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:524 PluginOcsinventoryngOcsDbClient->getTotalDeletedComputers()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:893                             CommonGLPI->defineAllTabs()
+  src/CommonGLPI.php:1230                            CommonGLPI->showTabsContent()
+  marketplace/ocsinventoryng/front/ocsng.php:56      CommonGLPI->display()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:650                             CommonGLPI->defineAllTabs()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:163  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:650                             CommonGLPI->defineAllTabs()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:650                             CommonGLPI->defineAllTabs()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1905 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:176  PluginOcsinventoryngOcsServer::checkOCSconnection()
+  src/CommonGLPI.php:383                             PluginOcsinventoryngMenu->getTabNameForItem()
+  marketplace/ocsinventoryng/inc/menu.class.php:252  CommonGLPI->addStandardTab()
+  src/CommonGLPI.php:333                             PluginOcsinventoryngMenu->defineTabs()
+  src/CommonGLPI.php:650                             CommonGLPI->defineAllTabs()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:523 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:523 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:55] glpiphplog.CRITICAL:   *** Uncaught Exception Error: mysqli object is not fully initialized in /var/www/html/glpi/src/DBmysql.php at line 396
+  Backtrace :
+  src/DBmysql.php:396                                mysqli->query()
+  src/DBmysql.php:352                                DBmysql->doQuery()
+  ...e/ocsinventoryng/inc/ocsdbclient.class.php:1351 DBmysql->query()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:524 PluginOcsinventoryngOcsDbClient->getTotalDeletedComputers()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  src/CommonGLPI.php:656                             CommonGLPI::displayStandardTab()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:58] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:523 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:58] glpiphplog.WARNING:   *** PHP Warning (2): mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo for  http failed: Name or service not known in /var/www/html/glpi/marketplace/ocsinventoryng/inc/dbocs.class.php at line 103
+  Backtrace :
+  marketplace/ocsinventoryng/inc/dbocs.class.php:103 mysqli->real_connect()
+  marketplace/ocsinventoryng/inc/dbocs.class.php:55  PluginOcsinventoryngDBocs->connect()
+  ...ace/ocsinventoryng/inc/ocsdbclient.class.php:54 PluginOcsinventoryngDBocs->__construct()
+  ...ace/ocsinventoryng/inc/ocsserver.class.php:1921 PluginOcsinventoryngOcsDbClient->__construct()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:523 PluginOcsinventoryngOcsServer::getDBocs()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
+[2024-08-16 02:07:58] glpiphplog.CRITICAL:   *** Uncaught Exception Error: mysqli object is not fully initialized in /var/www/html/glpi/src/DBmysql.php at line 396
+  Backtrace :
+  src/DBmysql.php:396                                mysqli->query()
+  src/DBmysql.php:352                                DBmysql->doQuery()
+  ...e/ocsinventoryng/inc/ocsdbclient.class.php:1351 DBmysql->query()
+  ...lace/ocsinventoryng/inc/ocsserver.class.php:524 PluginOcsinventoryngOcsDbClient->getTotalDeletedComputers()
+  marketplace/ocsinventoryng/inc/menu.class.php:227  PluginOcsinventoryngOcsServer::importMenu()
+  src/CommonGLPI.php:694                             PluginOcsinventoryngMenu::displayTabContentForItem()
+  ajax/common.tabs.php:120                           CommonGLPI::displayStandardTab()
+  public/index.php:82                                require()
+  
